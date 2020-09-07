@@ -1,0 +1,11 @@
+{
+  "name": "@stefanprobst/commitlint-config",
+  "version": "1.0.0",
+  "main": ".commitlintrc.json",
+  "repository": "git@github.com:stefanprobst/commitlint-config.git",
+  "author": "Stefan Probst <stefanprobst@kolabnow.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@commitlint/config-conventional": ">=9"
+  }
+}
