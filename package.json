@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/commitlint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "commitlintrc.json",
   "repository": "git@github.com:stefanprobst/commitlint-config.git",
   "author": "Stefan Probst <stefanprobst@kolabnow.com>",
