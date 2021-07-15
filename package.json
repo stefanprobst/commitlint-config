@@ -1,6 +1,6 @@
 {
   "name": "@stefanprobst/commitlint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "commitlintrc.json",
   "repository": "git@github.com:stefanprobst/commitlint-config.git",
   "author": "Stefan Probst <stefanprobst@kolabnow.com>",
@@ -8,7 +8,10 @@
   "files": [
     "commitlintrc.json"
   ],
-  "peerDependencies": {
+  "dependencies": {
     "@commitlint/config-conventional": ">=9"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": ">=9"
   }
 }
