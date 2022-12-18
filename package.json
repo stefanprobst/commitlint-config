@@ -24,6 +24,8 @@
 		"@commitlint/cli": ">=9"
 	},
 	"devDependencies": {
+		"@changesets/changelog-github": "^0.4.8",
+		"@changesets/cli": "^2.26.0",
 		"@commitlint/cli": "^17.3.0",
 		"@stefanprobst/prettier-config": "^3.0.0",
 		"lint-staged": "^13.1.0",
