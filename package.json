@@ -2,11 +2,12 @@
 	"name": "@stefanprobst/commitlint-config",
 	"version": "1.0.4",
 	"license": "MIT",
+	"type": "module",
 	"main": "commitlintrc.json",
 	"files": [
 		"commitlintrc.json"
 	],
-	"packageManager": "pnpm@8.9.2",
+	"packageManager": "pnpm@8.12.1",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
@@ -18,20 +19,20 @@
 		"validate": "run-p format:check"
 	},
 	"dependencies": {
-		"@commitlint/config-conventional": "^18.0.0"
+		"@commitlint/config-conventional": "^18.4.3"
 	},
 	"peerDependencies": {
-		"@commitlint/cli": ">=9"
+		"@commitlint/cli": ">=17"
 	},
 	"devDependencies": {
-		"@changesets/changelog-github": "^0.4.8",
-		"@changesets/cli": "^2.26.2",
-		"@commitlint/cli": "^18.0.0",
+		"@changesets/changelog-github": "^0.5.0",
+		"@changesets/cli": "^2.27.1",
+		"@commitlint/cli": "^18.4.3",
 		"@stefanprobst/prettier-config": "^4.0.0",
 		"is-ci": "^3.0.1",
-		"lint-staged": "^15.0.2",
+		"lint-staged": "^15.2.0",
 		"npm-run-all2": "^6.1.1",
-		"prettier": "^3.0.3",
+		"prettier": "^3.1.1",
 		"simple-git-hooks": "^2.9.0"
 	},
 	"commitlint": {
