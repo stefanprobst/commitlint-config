@@ -20,8 +20,8 @@ devDependencies:
     specifier: ^18.4.3
     version: 18.4.3(typescript@5.2.2)
   '@stefanprobst/prettier-config':
-    specifier: ^4.0.0
-    version: 4.0.0(prettier@3.1.1)
+    specifier: ^4.0.1
+    version: 4.0.1(prettier@3.1.1)
   is-ci:
     specifier: ^3.0.1
     version: 3.0.1
@@ -476,10 +476,10 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@stefanprobst/prettier-config@4.0.0(prettier@3.1.1):
-    resolution: {integrity: sha512-NjAdstzgkeq10W0sUWiS3/eSth1k33puVAI/mk7B6KGuYtK9ZpNOvxabKzRcPQ3CqiSXdeECOaX4CYIVXaQS5Q==}
+  /@stefanprobst/prettier-config@4.0.1(prettier@3.1.1):
+    resolution: {integrity: sha512-Y5Y/DhZVYl7Ma3zD2lhKmNPS0dW6xEJ5lsU319sLbhxByBBLoR3g/AtV+bDr3O2dsQ1oAiNBPdS2V+x7pudsAg==}
     peerDependencies:
-      prettier: '>=3'
+      prettier: 3.x
     dependencies:
       prettier: 3.1.1
     dev: true
