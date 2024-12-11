@@ -3,40 +3,44 @@
 	"version": "1.0.4",
 	"license": "MIT",
 	"type": "module",
-	"main": "commitlintrc.json",
+	"main": "./commitlint.config.js",
+	"exports": {
+		"default": "./commitlint.config.js"
+	},
 	"files": [
-		"commitlintrc.json"
+		"./commitlint.config.js"
 	],
-	"packageManager": "pnpm@8.12.1",
+	"packageManager": "pnpm@9.15.0",
 	"scripts": {
 		"changeset:add": "changeset add",
 		"changeset:status": "changeset status --verbose",
 		"ci:release": "changeset publish",
-		"format:check": "prettier . --cache --check --ignore-path .gitignore",
+		"ci:version": "changeset version && prettier \"**/CHANGELOG.md\" --write",
+		"format:check": "prettier . --cache --cache-location ./.prettiercache --check --ignore-path ./.gitignore",
 		"format:fix": "pnpm run format:check --write",
 		"prepare": "run-s setup",
 		"setup": "is-ci || simple-git-hooks",
 		"validate": "run-p format:check"
 	},
 	"dependencies": {
-		"@commitlint/config-conventional": "^18.4.3"
+		"@commitlint/config-conventional": "^19.6.0"
 	},
 	"peerDependencies": {
-		"@commitlint/cli": ">=17"
+		"@commitlint/cli": ">=19"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.5.0",
-		"@changesets/cli": "^2.27.1",
-		"@commitlint/cli": "^18.4.3",
-		"@stefanprobst/prettier-config": "^4.0.1",
+		"@changesets/cli": "^2.27.10",
+		"@commitlint/cli": "^19.6.0",
+		"@stefanprobst/prettier-config": "^4.1.0",
 		"is-ci": "^3.0.1",
-		"lint-staged": "^15.2.0",
-		"npm-run-all2": "^6.1.1",
-		"prettier": "^3.1.1",
-		"simple-git-hooks": "^2.9.0"
+		"lint-staged": "^15.2.11",
+		"npm-run-all2": "^7.0.1",
+		"prettier": "^3.4.2",
+		"simple-git-hooks": "^2.11.1"
 	},
 	"commitlint": {
-		"extends": "./commitlintrc.json"
+		"extends": "./commitlint.config.js"
 	},
 	"lint-staged": {
 		"*": "prettier --cache --ignore-unknown --write"

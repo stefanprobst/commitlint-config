@@ -1,6 +1,7 @@
-{
-	"extends": ["@commitlint/config-conventional"],
-	"rules": {
+/** @type {import("@commitlint/types").UserConfig} */
+const config = {
+	extends: ["@commitlint/config-conventional"],
+	rules: {
 		"subject-case": [0],
 		"type-enum": [
 			2,
@@ -18,8 +19,10 @@
 				"refactor",
 				"revert",
 				"style",
-				"test"
-			]
-		]
-	}
-}
+				"test",
+			],
+		],
+	},
+};
+
+export default config;
